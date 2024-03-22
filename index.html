@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anotações Financeiras</title>
+    <link rel="stylesheet" type="text/css" href=styles.css>
+</head>
+<body>
+    <div class="container">
+        <h1>Fluxo de caixa</h1>
+        <form action="/registrar_pagamento" method="post">
+            <label for="data_pagamento">Data e hora do pagamento:</label>
+            <input type="datetime-local" id="data_pagamento" name="data_pagamento">
+            <label for="valor_entrada">Valor em reais que entrou:</label>
+            <input type="number" id="valor_entrada" name="valor_entrada" step="0.01">
+            <button type="submit">Registrar Pagamento</button>
+        </form>
+        <form action="/registrar_saida" method="post">
+            <label for="data_saida">Data e hora da saída:</label>
+            <input type="datetime-local" id="data_saida" name="data_saida">
+            <label for="valor_saida">Valor em reais que saiu:</label>
+            <input type="number" id="valor_saida" name="valor_saida" step="0.01">
+            <button type="submit">Registrar Saída</button>
+        </form>
+    </div>
+</body>
+</html>
